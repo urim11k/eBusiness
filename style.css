@@ -57,6 +57,188 @@ body {
 
 
 
+/* ...之前的CSS代码... */
+
+.hero {
+    background-color: #eee; /* 暂时使用灰色背景，您可以设置图片或其他背景 */
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 2.5em;
+  }
+  
+  .hero p {
+    margin: 0 0 20px 0;
+    color: #333;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #003974;
+  }
+  
+  /* ...之后的CSS代码... */
+  
+
+/* ...之前的CSS代码... */
+
+.services {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    flex-basis: 30%;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .service-item p {
+    color: #666;
+  }
+
+
+/* ...之前的CSS代码... */
+
+.news {
+    background-color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .news-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .news-item {
+    flex-basis: 45%; /* 适应两列布局 */
+    margin-bottom: 20px;
+  }
+  
+  .news-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .news-item h3 {
+    margin: 10px 0;
+  }
+  
+  .news-item p {
+    color: #666;
+  }
+
+/* ...之前的CSS代码... */
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-img {
+    flex-basis: 50%;
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .about-content {
+    flex-basis: 50%;
+  }
+  
+  .about h2 {
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    color: #666;
+  }
+  
+  /* 适应移动设备 */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .about-img,
+    .about-content {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+    
+    .about-img {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* ...之后的CSS代码... */
+  
+
+
+
+
+  
+  /* 适应移动设备 */
+  @media (max-width: 768px) {
+    .news-item {
+      flex-basis: 100%;
+    }
+  }
+  
+  /* ...之后的CSS代码... */
+  
+
+
+
+
+
+  
+  /* 适应移动设备 */
+  @media (max-width: 768px) {
+    .service-item {
+      flex-basis: 100%;
+    }
+  }
+  
+  /* ...之后的CSS代码... */
+  
 
 
 
