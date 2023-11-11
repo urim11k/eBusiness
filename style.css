@@ -272,7 +272,7 @@ body {
 
 /* 登錄表單懸浮層的基本樣式 */
 .login-modal {
-  display: none; /* 預設不顯示，這將在JavaScript中通過函數調用來更改 */
+  display: none; /* 預設不顯示 */
   position: fixed; /* 固定位置 */
   z-index: 10; /* 確保在頁面其他元素之上 */
   left: 0;
@@ -280,22 +280,24 @@ body {
   width: 100%; /* 滿屏寬 */
   height: 100%; /* 滿屏高 */
   background-color: rgba(0, 0, 0, 0.6); /* 半透明背景 */
+  display: flex; /* 使用flexbox來居中內容 */
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
-  display: flex; /* 添加這行來啟用Flexbox */
-  overflow: auto; /* 啟用滾動條 */
 }
 
-
-/* 登錄表單內容的樣式 */
 .modal-content {
   background-color: #fff;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 400px;
+  max-width: 400px; /* modal的最大寬度 */
+  /* 為了兼容不完全支持flexbox的瀏覽器，添加自動邊距 */
+  margin: auto;
 }
+
+/* 其他樣式... */
+
 
 /* 關閉按鈕樣式 */
 .close-button {
