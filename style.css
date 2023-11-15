@@ -270,19 +270,19 @@ body {
 
 
 
-/* 登錄表單懸浮層的基本樣式 */
+/* Basic style of login form floating layer */
 .login-modal {
-  display: none; /* 預設不顯示 */
-  position: fixed; /* 固定位置 */
-  z-index: 10; /* 確保在頁面其他元素之上 */
+  display: none; /* Not displayed by default */
+  position: fixed; /*Fixed position*/
+  z-index: 10; /* Make sure it's on top of other elements on the page */
   left: 0;
   top: 0;
-  width: 100%; /* 滿屏寬 */
-  height: 100%; /* 滿屏高 */
-  background-color: rgba(0, 0, 0, 0.6); /* 半透明背景 */
-  display: flex; /* 使用flexbox來居中內容 */
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
+  width: 100%; /* Full screen width */
+  height: 100%; /* Full screen height */
+  background-color: rgba(0, 0, 0, 0.6); /* translucent background */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .modal-content {
@@ -291,15 +291,15 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 400px; /* modal的最大寬度 */
-  /* 為了兼容不完全支持flexbox的瀏覽器，添加自動邊距 */
+  max-width: 400px; /*max width of modal */
+  /* To be compatible with browsers that do not fully support flexbox, add automatic margins */
   margin: auto;
 }
 
-/* 其他樣式... */
+/* other style... */
 
 
-/* 關閉按鈕樣式 */
+/* close button style */
 .close-button {
   color: #aaa;
   float: right;
@@ -314,7 +314,7 @@ body {
   cursor: pointer;
 }
 
-/* 表單樣式 */
+/* login form style */
 .login-form h2 {
   text-align: center;
   margin-bottom: 24px;
@@ -352,4 +352,13 @@ body {
 
 .btn.login-btn:hover {
   background-color: rgb(79, 124, 192);
+}
+
+/*style of iframe*/
+iframe {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 200px;
+  border: none;
 }

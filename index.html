@@ -26,14 +26,15 @@
         </div>
       
         <!-- Login Button -->
-        <!-- 登錄按鈕 -->
+        <!-- login-button -->
         <button class="login-button" onclick="openLoginForm()">LogIn</button>
 
-          <!-- 登錄表單懸浮層 -->
+          <!-- Login form floating layer -->
           <div id="loginForm" class="login-modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeLoginForm()">&times;</span>
-                <h2>Welcome</h2>
+                <iframe src="http://localhost:8080/website_login/index.php"></iframe>
+                <!-- <h2>Welcome</h2>
                 <form action="/login" method="post" class="login-form">
                     <div class="input-group">
                         <label for="email">Email:</label>
@@ -44,7 +45,7 @@
                         <input type="password" id="password" name="password" required>
                     </div>
                     <button type="submit" class="btn login-btn">Login</button>
-                </form>
+                </form> -->
             </div>
           </div>
 
