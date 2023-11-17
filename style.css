@@ -10,7 +10,7 @@ body, html {
     justify-content: space-between; /* Make sure the navigation is aligned on both sides */
     align-items: center;
     background-color: #333;
-    color: white;
+    /* color: white; */
     padding: 0 20px;
   }
   
@@ -410,6 +410,46 @@ body, html {
   cursor: pointer;
 }
 
+/* form style */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn.login-btn {
+  width: 100%;
+  background-color: #4c59af;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.login-btn:hover {
+  background-color: rgb(79, 124, 192);
+}
 
 /* Call to Action Button */
 .call-to-action {
@@ -451,12 +491,12 @@ body, html {
 
 
 /*style of iframe*/
-iframe {
+/* iframe {
   margin: 0;
   padding: 0;
   width: 400px;
   height: 200px;
   border: none;
-}
+} */
 
 
