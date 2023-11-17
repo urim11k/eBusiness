@@ -1,8 +1,10 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+ 
   .navbar {
     display: flex;
     justify-content: space-between; /* Make sure the navigation is aligned on both sides */
@@ -58,23 +60,38 @@ body {
 
 
 /* ...hero css... */
-
 .hero {
-    background-color: #eee; /* Temporarily use a gray background, can set a picture or other background */
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .hero h1 {
-    margin: 0 0 20px 0;
-    font-size: 2.5em;
-  }
-  
-  .hero p {
-    margin: 0 0 20px 0;
-    color: #333;
-  }
-  
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-inner {
+  color: white;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.hero-inner h1, .hero-inner p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+ 
   .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -95,17 +112,25 @@ body {
 /* ...services css... */
 
 .services {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center; /* Center aligns the headline */
+}
+
+.services-headline {
+  margin-bottom: 40px; /* Adjust as needed for spacing */
+  /* Additional styling for the headline */
+  font-size: 2em;
+  color: #333;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
   
   .service-item {
     flex-basis: 30%;
@@ -114,6 +139,13 @@ body {
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-item img {
+    max-width: 100%;
+    height: 400px;
+    display: block;
+    margin: 0 auto 20px;
   }
   
   .service-item h2 {
@@ -127,72 +159,98 @@ body {
 
 /* ...end of services css... */
 
-/* ...news css... */
+/* ...processes... */
 
-.news {
-    background-color: #fff;
-    padding: 40px 20px;
-  }
-  
-  .news h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .news-items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .news-item {
-    flex-basis: 45%; /* Adapt to two column layout */
-    margin-bottom: 20px;
-  }
-  
-  .news-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .news-item h3 {
-    margin: 10px 0;
-  }
-  
-  .news-item p {
-    color: #666;
-  }
+.how-we-work {
+  text-align: center;
+  padding: 40px;
+  background-color: #f4f4f4;
+}
 
-/* ...end of news css... */
+.how-we-work h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.steps-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; /* Align items vertically */
+}
+
+.step {
+  flex-basis: 30%; /* Adjust based on container size */
+  height: 180px; /* Fixed height */
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd; /* Visual separation */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.step h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* ...processes... */
 
 /* ...about css... */
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
 
-.about {
-    display: flex;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .about-img {
-    flex-basis: 50%;
-    max-width: 50%;
-    height: auto;
-    margin-right: 20px;
-  }
-  
-  .about-content {
-    flex-basis: 50%;
-  }
-  
-  .about h2 {
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    color: #666;
-  }
+.about-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-photo {
+  flex: 1;
+  padding-right: 20px; /* Adds some space between image and text */
+}
+
+.team-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.about-text {
+  flex: 2;
+  padding-left: 20px; /* Adds some space between text and image */
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2em;
+}
+
+.about-text p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
 /* ...end of about css... */
 
   
@@ -236,35 +294,73 @@ body {
 
   /* ...footer css... */
 
-.footer {
+  .footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
-  }
-  
-  .footer-content {
+}
+
+.footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .footer-nav {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-brand {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 150px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.footer-nav {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin-bottom: 20px;
     list-style: none;
-  }
-  
-  .footer-nav a {
+}
+
+.footer-nav a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
-  }
-  
-  .footer-nav a:hover {
+}
+
+.footer-nav a:hover {
     text-decoration: underline;
-  }
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #555; /* Or any other color */
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.social-icon:hover {
+    background-color: #777;
+}
+
+.footer-copy {
+    font-size: 0.9em;
+}
+
  /* ...end of footer css... */ 
 
 
@@ -273,7 +369,7 @@ body {
 /* Basic style of login form floating layer */
 .login-modal {
   display: none; /* Not displayed by default */
-  position: fixed; /*Fixed position*/
+  position: fixed; /* Fixed position */
   z-index: 10; /* Make sure it's on top of other elements on the page */
   left: 0;
   top: 0;
@@ -291,12 +387,12 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 400px; /*max width of modal */
+  max-width: 400px; /* max width of modal */
   /* To be compatible with browsers that do not fully support flexbox, add automatic margins */
   margin: auto;
 }
 
-/* other style... */
+/* Other styles... */
 
 
 /* close button style */
@@ -314,7 +410,7 @@ body {
   cursor: pointer;
 }
 
-/* login form style */
+/* form style */
 .login-form h2 {
   text-align: center;
   margin-bottom: 24px;
@@ -354,6 +450,45 @@ body {
   background-color: rgb(79, 124, 192);
 }
 
+/* Call to Action Button */
+.call-to-action {
+  background-color: #ffffff; /* Or any color that matches your website theme */
+  color: #333333;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.call-to-action h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffc107; /* Contrast color for visibility */
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e0a800; /* Slightly darker on hover for interaction feedback */
+}
+
+
 /*style of iframe*/
 iframe {
   margin: 0;
@@ -362,3 +497,5 @@ iframe {
   height: 200px;
   border: none;
 }
+
+

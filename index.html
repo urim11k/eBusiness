@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<script type="text/javascript" src="login.js"></script>
-<title>Company Title</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="login.js"></script>
+    <title>Company Title</title>
+  </head>
+  <body>
     <header class="navbar">
-        <!-- Logo Link to home page -->
-        <div class="logo">
-          <a href="index.html">Logo</a>
-        </div>
-      
-        <!-- Menu items are linked to their respective pages -->
-        <div class="menu-container">
-          <nav class="menu">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-          </nav>
-        </div>
-      
-        <!-- Login Button -->
+      <!-- Logo Link to home page -->
+      <div class="logo">
+        <a href="index.html">Logo</a>
+      </div>
+
+      <!-- Menu items are linked to their respective pages -->
+      <div class="menu-container">
+        <nav class="menu">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+
+      <!-- Login Button -->
         <!-- login-button -->
         <button class="login-button" onclick="openLoginForm()">LogIn</button>
 
@@ -49,97 +48,156 @@
             </div>
           </div>
 
+    </header>
 
-      </header>
-      
+    <!-- Other body will show here... -->
 
-<!-- Other body will show here... -->
+    <!-- ...Hero section Code... -->
 
-<!-- ...Hero section Code... -->
-
-<section class="hero">
-    <h1>Services</h1>
-    <p>Short describe of the Services。</p>
-    <a href="#services" class="btn">Learn More</a>
-  </section>
-  
-  <!-- ...End of hero section... -->
-
-<!-- ...Services section Code... -->
-
-<section class="services">
-    <div class="container">
-      <div class="service-item">
-        <h2>Service 1</h2>
-        <p>Describe of Services 1。</p>
+    <section
+      class="hero"
+      style="background-image: url('Images/hero-pic-1.jpg')"
+    >
+      <div class="hero-inner">
+        <h1>Welcome to the Digital Agency</h1>
+        <p>
+          In the digital age, your online presence is your business card. At
+          Digital Agency, we understand the importance of a strong digital
+          footprint. With a team of dedicated professionals, we offer
+          unparalleled web development and graphic design services tailored to
+          your unique needs. Whether you're a startup looking for a fresh
+          website or an established brand in need of a visual overhaul, we're
+          here to transform your digital dreams into reality.
+        </p>
+        <a href="#services" class="btn">Get Started</a>
       </div>
-      <div class="service-item">
-        <h2>Service 2</h2>
-        <p>Describe of Service 2。</p>
-      </div>
-      <div class="service-item">
-        <h2>Service 3</h2>
-        <p>Describe of Services 3。</p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- ...End of services section... -->
-  
-<!-- ...News section Code... -->
+    </section>
+    <!-- ...End of hero section... -->
 
-<section class="news">
-    <div class="container">
-      <h2>Latest News</h2>
-      <div class="news-items">
-        <div class="news-item">
-          <img src="news-image1.jpg" alt="News Image 1" />
-          <h3>News Title 1</h3>
-          <p>Discribe of the News 1。</p>
-          <a href="#" class="btn">Learn More</a>
+    <!-- ...Services section Code... -->
+    <section class="services">
+      <h2 class="services-headline">Our Services</h2>
+      <!-- Headline added here -->
+      <div class="services-container">
+        <div class="service-item">
+          <img src="Images/web-design-1.jpg" alt="Web Design" />
+          <h2>Web Design</h2>
+          <p>
+            Dive into our web design offerings where functionality meets
+            aesthetics. From responsive websites to custom e-commerce platforms,
+            our designs are crafted to enhance user experience and elevate your
+            brand's digital presence.
+          </p>
         </div>
-        <div class="news-item">
-          <img src="news-image2.jpg" alt="News Image 2" />
-          <h3>News Title 2</h3>
-          <p>Discribe of the News 2。</p>
-          <a href="#" class="btn">Learn More</a>
+        <div class="service-item">
+          <img src="Images/graphic-design-1.jpg" alt="Graphic Design" />
+          <h2>Graphic Design</h2>
+          <p>
+            Explore our graphic design expertise. Whether it's branding,
+            marketing materials, or digital graphics, our creative team brings
+            your ideas to life with designs that resonate with your audience and
+            embody your brand's identity.
+          </p>
         </div>
-        <!-- Can add more News, maybe -->
       </div>
-    </div>
-  </section>
-  
-  <!-- ...End of News section... -->
+    </section>
+    <!-- ...End of services section... -->
 
-<!-- ...About section Code... -->
-
-<section class="about">
-    <div class="container">
-      <img src="about-image.jpg" alt="about us" class="about-img">
-      <div class="about-content">
-        <h2>About Us</h2>
-        <p>Detailed description text about us。</p>
-        <a href="#" class="btn">More Info</a>
+    <!-- ...Processes... -->
+    <section class="how-we-work">
+      <h2>How We Work</h2>
+      <div class="steps-wrapper">
+        <!-- Wrapper for steps -->
+        <div class="step" id="step1">
+          <h3>Step 1: Consultation</h3>
+          <p>
+            We start by understanding your needs through an in-depth
+            consultation to gather insights and establish goals.
+          </p>
+        </div>
+        <div class="step" id="step2">
+          <h3>Step 2: Design & Development</h3>
+          <p>
+            Our team then designs and develops solutions tailored to your
+            specific requirements, ensuring quality and efficiency.
+          </p>
+        </div>
+        <div class="step" id="step3">
+          <h3>Step 3: Delivery & Feedback</h3>
+          <p>
+            Finally, we deliver the project, followed by a period of feedback
+            and adjustments to guarantee satisfaction.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- ...End of About section... -->
-    
-  
+    </section>
+    <!-- ...End of News section... -->
 
-<!-- ...Footer Code... -->
+    <!-- ...About section Code... -->
+    <section class="about-us">
+      <div class="about-container">
+        <div class="team-photo">
+          <img src="Images/about-us-1.jpg" alt="Our Team" />
+        </div>
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            Welcome to Digital Agency, where we bring innovative solutions to
+            life. Founded in 2023, our team of dedicated professionals has been
+            committed to excellence and innovation in Web and Graphic Desig. Our
+            mission is to empower businesses and individuals with cutting-edge
+            solutions that make a real difference.
+          </p>
+          <p>
+            At Digital Agency, we are more than just a team; we are a family
+            that values collaboration, creativity, and above all, customer
+            satisfaction. Join us on our journey to make a lasting impact in the
+            world.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ...End of About section... -->
 
-<footer class="footer">
-    <div class="footer-content">
-      <p>Copyright © 2023 CompanyName. All rights reserved。</p>
-      <nav class="footer-nav">
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#terms">Terms of Use</a>
-        <a href="#contact">Contact Us</a>
-      </nav>
-    </div>
-  </footer>
-  
+    <!-- Call to Action Code -->
+    <section class="call-to-action">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>
+          Join us on your journey to success and let us achieve great things
+          together.
+        </p>
+        <a href="#services" class="btn">Get Started</a>
+      </div>
+    </section>
+    <!-- ...End of Call to Action Code... -->
+
+    <!-- ...Footer Code... -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img
+            src="Images/eBusiness Project (512 x 300 px).png"
+            alt="Digital Agency Logo"
+            class="footer-logo"
+          />
+          <p>Empowering your digital journey.</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Use</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="footer-social">
+          <a href="your_facebook_link" class="social-icon">FB</a>
+          <a href="your_twitter_link" class="social-icon">TW</a>
+          <a href="your_instagram_link" class="social-icon">IG</a>
+        </div>
+        <p class="footer-copy">
+          Copyright © 2023 Digital Agency. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
-  </html>
+</html>
