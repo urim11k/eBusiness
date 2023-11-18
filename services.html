@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Company Title</title>
+    <script src="login.js"></script>
+    <title>Digital Agency</title>
   </head>
   <body>
     <header class="navbar">
@@ -22,19 +23,23 @@
               <div class="submenu">
                 <button class="subdropbtn">Website Creation</button>
                 <div class="submenu-content">
-                  <a href="#">Custom Web Design</a>
-                  <a href="#">E-commerce Solutions</a>
-                  <a href="#">Responsive Web Design</a>
-                  <a href="#">Website Maintenance & Support</a>
+                  <a href="Service-Web-CWD.html">Custom Web Design</a>
+                  <a href="Service-Web-Ecomm.html">E-commerce Solutions</a>
+                  <a href="Service-Web-RWD.html">Responsive Web Design</a>
+                  <a href="Service-Web-Support.html"
+                    >Website Maintenance & Support</a
+                  >
                 </div>
               </div>
               <div class="submenu">
                 <button class="subdropbtn">Graphic Design</button>
                 <div class="submenu-content">
-                  <a href="#">Logo Design</a>
-                  <a href="#">Branding & Identity</a>
-                  <a href="#">Print Design</a>
-                  <a href="#">Digital Graphics</a>
+                  <a href="Service-Graphic-Logo.html">Logo Design</a>
+                  <a href="Service-Graphic-Branding.html"
+                    >Branding & Identity</a
+                  >
+                  <a href="Service-Graphic-Print.html">Print Design</a>
+                  <a href="Service-Graphic-Digital.html">Digital Graphics</a>
                 </div>
               </div>
             </div>
@@ -44,14 +49,13 @@
         </nav>
       </div>
       <!-- Login Button -->
-      <!-- login-button -->
       <button class="login-button" onclick="openLoginForm()">LogIn</button>
 
       <!-- Login form floating layer -->
-      <div id="loginForm" class="login-modal">
+      <div id="loginFormContainer" class="login-modal">
         <div class="modal-content">
           <span class="close-button" onclick="closeLoginForm()">&times;</span>
-          <iframe src=""></iframe>
+          <!-- <iframe src=""></iframe> -->
         </div>
       </div>
     </header>
@@ -85,126 +89,141 @@
       </div>
     </section>
 
-    <!-- Website Creation Services -->
-    <section class="website-creation-section">
-      <div class="website-creation-container">
-        <h2 class="website-creation-title">Website Creation</h2>
-        <p class="website-creation-description">
-          Your website is the digital face of your business...
-        </p>
-
-        <div class="services-grid">
-          <div class="website-service">
-            <img
-              src="Images/services-webdesign-1.jpg"
-              alt="Custom Web Design"
-              class="service-image"
-            />
-            <h3 class="service-title">Custom Web Design</h3>
-            <p class="service-description">
-              Tailored to your brand's identity...
-            </p>
-          </div>
-
-          <div class="website-service">
-            <img
-              src="Images/services-webshop-1.jpg"
-              alt="E-commerce Solutions"
-              class="service-image"
-            />
-            <h3 class="service-title">E-commerce Solutions</h3>
-            <p class="service-description">
-              From product listings to secure payment gateways...
-            </p>
-          </div>
-
-          <div class="website-service">
-            <img
-              src="Images/services-responsiveweb-1.jpg"
-              alt="Responsive Web Design"
-              class="service-image"
-            />
-            <h3 class="service-title">Responsive Web Design</h3>
-            <p class="service-description">
-              Ensure your website looks and functions perfectly...
-            </p>
-          </div>
-
-          <div class="website-service">
-            <img
-              src="Images/services-support-1.jpg"
-              alt="Website Maintenance & Support"
-              class="service-image"
-            />
-            <h3 class="service-title">Website Maintenance & Support</h3>
-            <p class="service-description">
-              Keep your website up-to-date and running smoothly...
-            </p>
-          </div>
-        </div>
+    <!-- Core Feature #2: Customers can view product/service according to categories (Website Creation or Graphic Design) -->
+    <section class="filter-section">
+      <div class="filter-container">
+        <select id="serviceFilter" onchange="filterServices()">
+          <option value="all">All Services</option>
+          <option value="WebsiteCreation">Website Creation</option>
+          <option value="GraphicDesign">Graphic Design</option>
+        </select>
       </div>
     </section>
 
-    <!-- Graphic Design Services -->
-    <section class="website-creation-section">
-      <div class="website-creation-container">
-        <h2 class="website-creation-title">Graphic Design</h2>
-        <p class="website-creation-description">
-          Visuals speak louder than words...
-        </p>
+    <div class="service" data-category="WebsiteCreation">
+      <!-- Website Creation Services -->
+      <section class="website-creation-section">
+        <div class="website-creation-container">
+          <h2 class="website-creation-title">Website Creation</h2>
+          <p class="website-creation-description">
+            Your website is the digital face of your business...
+          </p>
 
-        <div class="services-grid">
-          <div class="website-service">
-            <img
-              src="Images/services-graphic-logodesign-1.jpg"
-              alt="Custom Web Design"
-              class="service-image"
-            />
-            <h3 class="service-title">Logo Design</h3>
-            <p class="service-description">
-              A logo is more than just an image...
-            </p>
-          </div>
+          <div class="services-grid">
+            <div class="website-service">
+              <img
+                src="Images/services-webdesign-1.jpg"
+                alt="Custom Web Design"
+                class="service-image"
+              />
+              <h3 class="service-title">Custom Web Design</h3>
+              <p class="service-description">
+                Tailored to your brand's identity...
+              </p>
+            </div>
 
-          <div class="website-service">
-            <img
-              src="Images/services-graphic-branding-1.jpg"
-              alt="E-commerce Solutions"
-              class="service-image"
-            />
-            <h3 class="service-title">Branding & Identity</h3>
-            <p class="service-description">
-              Consistent branding is key to building trust...
-            </p>
-          </div>
+            <div class="website-service">
+              <img
+                src="Images/services-webshop-1.jpg"
+                alt="E-commerce Solutions"
+                class="service-image"
+              />
+              <h3 class="service-title">E-commerce Solutions</h3>
+              <p class="service-description">
+                From product listings to secure payment gateways...
+              </p>
+            </div>
 
-          <div class="website-service">
-            <img
-              src="Images/services-graphic-printdesign-1.jpg"
-              alt="Responsive Web Design"
-              class="service-image"
-            />
-            <h3 class="service-title">Print Design</h3>
-            <p class="service-description">
-              Our designs ensure you leave a tangible mark in the physical
-              world....
-            </p>
-          </div>
+            <div class="website-service">
+              <img
+                src="Images/services-responsiveweb-1.jpg"
+                alt="Responsive Web Design"
+                class="service-image"
+              />
+              <h3 class="service-title">Responsive Web Design</h3>
+              <p class="service-description">
+                Ensure your website looks and functions perfectly...
+              </p>
+            </div>
 
-          <div class="website-service">
-            <img
-              src="Images/services-graphic-digitalgraphics-1.jpg"
-              alt="Website Maintenance & Support"
-              class="service-image"
-            />
-            <h3 class="service-title">Digital Graphics</h3>
-            <p class="service-description">
-              We create visuals that drive clicks and conversions...
-            </p>
+            <div class="website-service">
+              <img
+                src="Images/services-support-1.jpg"
+                alt="Website Maintenance & Support"
+                class="service-image"
+              />
+              <h3 class="service-title">Website Maintenance & Support</h3>
+              <p class="service-description">
+                Keep your website up-to-date and running smoothly...
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
+    <div class="service" data-category="GraphicDesign">
+      <!-- Graphic Design Services -->
+      <section class="website-creation-section">
+        <div class="website-creation-container">
+          <h2 class="website-creation-title">Graphic Design</h2>
+          <p class="website-creation-description">
+            Visuals speak louder than words...
+          </p>
+
+          <div class="services-grid">
+            <div class="website-service">
+              <img
+                src="Images/services-graphic-logodesign-1.jpg"
+                alt="Custom Web Design"
+                class="service-image"
+              />
+              <h3 class="service-title">Logo Design</h3>
+              <p class="service-description">
+                A logo is more than just an image...
+              </p>
+            </div>
+
+            <div class="website-service">
+              <img
+                src="Images/services-graphic-branding-1.jpg"
+                alt="E-commerce Solutions"
+                class="service-image"
+              />
+              <h3 class="service-title">Branding & Identity</h3>
+              <p class="service-description">
+                Consistent branding is key to building trust...
+              </p>
+            </div>
+
+            <div class="website-service">
+              <img
+                src="Images/services-graphic-printdesign-1.jpg"
+                alt="Responsive Web Design"
+                class="service-image"
+              />
+              <h3 class="service-title">Print Design</h3>
+              <p class="service-description">
+                Our designs ensure you leave a tangible mark in the physical
+                world....
+              </p>
+            </div>
+
+            <div class="website-service">
+              <img
+                src="Images/services-graphic-digitalgraphics-1.jpg"
+                alt="Website Maintenance & Support"
+                class="service-image"
+              />
+              <h3 class="service-title">Digital Graphics</h3>
+              <p class="service-description">
+                We create visuals that drive clicks and conversions...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- Call to Action Code -->
     <section class="call-to-action" id="call-to-action-about">
@@ -214,7 +233,7 @@
           Join us on your journey to success and let us achieve great things
           together.
         </p>
-        <a href="#services" class="btn">Get Started</a>
+        <a href="services.html" class="btn">Get Started</a>
       </div>
     </section>
     <!-- ...End of Call to Action Code... -->
@@ -231,14 +250,14 @@
           <p>Empowering your digital journey.</p>
         </div>
         <nav class="footer-nav">
-          <a href="#privacy">Privacy Policy</a>
-          <a href="#terms">Terms of Use</a>
-          <a href="#contact">Contact Us</a>
+          <a>Privacy Policy</a>
+          <a>Terms of Use</a>
+          <a>Contact Us</a>
         </nav>
         <div class="footer-social">
-          <a href="your_facebook_link" class="social-icon">FB</a>
-          <a href="your_twitter_link" class="social-icon">TW</a>
-          <a href="your_instagram_link" class="social-icon">IG</a>
+          <a class="social-icon">FB</a>
+          <a class="social-icon">TW</a>
+          <a class="social-icon">IG</a>
         </div>
         <p class="footer-copy">
           Copyright © 2023 Digital Agency. All rights reserved.

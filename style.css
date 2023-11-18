@@ -7,24 +7,23 @@ body, html {
  
   .navbar {
     display: flex;
-    justify-content: space-between; /* Make sure the navigation is aligned on both sides */
+    justify-content: space-between; 
     align-items: center;
     background-color: #333;
-    /* color: white; */
     padding: 0 20px;
   }
   
   .navbar .menu-container {
     display: flex;
-    justify-content: start; /* Make sure the menu is left aligned in this container */
-    flex-grow: 1; /* Make the menu container take up available space */
-    margin-right: auto; /* Make sure the button is aligned to the right */
+    justify-content: start; 
+    flex-grow: 1; 
+    margin-right: auto; 
   }
   
   .menu {
     display: flex;
-    list-style-type: none; /* Remove point style from ul */
-    padding-left: 0; /* Remove default indentation of ul */
+    list-style-type: none; 
+    padding-left: 0; 
   }
   .navbar a {
     color: white;
@@ -146,14 +145,14 @@ body, html {
 
 /* Basic style of login form floating layer */
 .login-modal {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Overlay effect */
-  z-index: 2; /* Make sure it's above other elements */
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 2; 
 }
 
 .modal-content {
@@ -178,9 +177,6 @@ body, html {
   color: black;
   cursor: pointer;
 }
-
-
-
 
 /* ...hero css... */
 .hero {
@@ -228,21 +224,18 @@ body, html {
   .btn:hover {
     background-color: #003974;
   }
-  
-  /* ...end of hero css... */
+    /* ...end of hero css... */
   
 
 /* ...services css... */
-
 .services {
   background-color: #f9f9f9;
   padding: 40px 20px;
-  text-align: center; /* Center aligns the headline */
+  text-align: center; 
 }
 
 .services-headline {
-  margin-bottom: 40px; /* Adjust as needed for spacing */
-  /* Additional styling for the headline */
+  margin-bottom: 40px; 
   font-size: 2em;
   color: #333;
 }
@@ -278,12 +271,9 @@ body, html {
   .service-item p {
     color: #666;
   }
-
-
 /* ...end of services css... */
 
 /* ...processes... */
-
 .how-we-work {
   text-align: center;
   padding: 40px;
@@ -299,21 +289,21 @@ body, html {
 .steps-wrapper {
   display: flex;
   justify-content: space-around;
-  align-items: stretch; /* Align items vertically */
+  align-items: stretch; 
 }
 
 .step {
-  flex-basis: 30%; /* Adjust based on container size */
-  height: 180px; /* Fixed height */
+  flex-basis: 30%; 
+  height: 180px; 
   text-align: center;
   padding: 20px;
   margin: 10px;
-  border: 1px solid #ddd; /* Visual separation */
+  border: 1px solid #ddd; 
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribute space evenly */
+  justify-content: space-between; 
 }
 
 .step h3 {
@@ -348,18 +338,18 @@ body, html {
 
 .team-photo {
   flex: 1;
-  padding-right: 20px; /* Adds some space between image and text */
+  padding-right: 20px; 
 }
 
 .team-photo img {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Optional: for rounded corners */
+  border-radius: 10px; 
 }
 
 .about-text {
   flex: 2;
-  padding-left: 20px; /* Adds some space between text and image */
+  padding-left: 20px;
 }
 
 .about-text h2 {
@@ -411,12 +401,10 @@ body, html {
       }
 
   }
-  
   /* ...end of moblile devices css... */
   
 
   /* ...footer css... */
-
   .footer {
     background-color: #333;
     color: white;
@@ -437,7 +425,7 @@ body, html {
 }
 
 .footer-logo {
-    height: 150px; /* Adjust as needed */
+    height: 150px; 
     margin-bottom: 10px;
 }
 
@@ -469,7 +457,7 @@ body, html {
     display: inline-block;
     padding: 5px 10px;
     margin: 0 5px;
-    background-color: #555; /* Or any other color */
+    background-color: #555; 
     border-radius: 50%;
     text-decoration: none;
     color: white;
@@ -486,22 +474,19 @@ body, html {
 
  /* ...end of footer css... */ 
 
-
-
-
 /* Basic style of login form floating layer */
 .login-modal {
-  display: none; /* Not displayed by default */
-  position: fixed; /* Fixed position */
-  z-index: 10; /* Make sure it's on top of other elements on the page */
+  display: none; 
+  position: fixed; 
+  z-index: 10; 
   left: 0;
   top: 0;
-  width: 100%; /* Full screen width */
-  height: 100%; /* Full screen height */
-  background-color: rgba(0, 0, 0, 0.6); /* translucent background */
-  display: flex; /* Use flexbox to center content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.6); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .modal-content {
@@ -510,13 +495,9 @@ body, html {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 400px; /* max width of modal */
-  /* To be compatible with browsers that do not fully support flexbox, add automatic margins */
+  max-width: 400px; 
   margin: auto;
 }
-
-/* Other styles... */
-
 
 /* close button style */
 .close-button {
@@ -561,7 +542,7 @@ body, html {
 
 .btn.login-btn {
   width: 100%;
-  background-color: #4c59af;
+  background-color: #3e3e3e;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -571,12 +552,12 @@ body, html {
 }
 
 .btn.login-btn:hover {
-  background-color: rgb(79, 124, 192);
+  background-color: #3e3e3e;
 }
 
 /* Call to Action Button */
 .call-to-action {
-  background-color: #ffffff; /* Or any color that matches your website theme */
+  background-color: #ffffff; 
   color: #333333;
   text-align: center;
   padding: 40px 20px;
@@ -600,7 +581,7 @@ body, html {
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ffc107; /* Contrast color for visibility */
+  background-color: #ffc107;
   color: #333;
   text-decoration: none;
   font-size: 1.2em;
@@ -609,31 +590,21 @@ body, html {
 }
 
 .cta-button:hover {
-  background-color: #e0a800; /* Slightly darker on hover for interaction feedback */
-}
-
-
-/*style of iframe*/
-/* iframe {
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  height: 200px;
-  border: none;
+  background-color: #e0a800; 
 }
 
 /* About Hero */
 .about-hero {
   display: flex;
-  align-items: stretch; /* Align items to stretch to the same height */
+  align-items: stretch; 
   justify-content: space-between;
-  height: 400px; /* Set a fixed height for the hero section */
+  height: 400px; 
   background-color: #f8f8f8;
 }
 
 .hero-content {
-  flex-basis: 50%; /* Adjusts the width of the content area */
-  padding: 40px; /* Padding for the text content */
+  flex-basis: 50%; 
+  padding: 40px; 
 }
 
 .hero-content h1 {
@@ -648,28 +619,28 @@ body, html {
 }
 
 .hero-image {
-  flex-basis: 50%; /* Adjusts the width of the image area */
-  overflow: hidden; /* Ensures the image does not spill out of its container */
+  flex-basis: 50%; 
+  overflow: hidden; 
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the full area without stretching */
-  border-radius: 0 10px 10px 0; /* Optional: rounded corners on the right side */
+  object-fit: cover; 
+  border-radius: 0 10px 10px 0; 
 }
 
 /* Our Story  */
 .our-story { 
-  background-color: #f4f4f4; /*Light background for contrast */
+  background-color: #f4f4f4; 
   padding: 40px 0;
   text-align: center;
 }
 
 .our-story .container {
-  max-width: 800px; /* Restricting the width for better readability */
-  margin: 0 auto; /* Centering the container */
-  padding: 0 20px; /* Padding on smaller screens */
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
 }
 
 .our-story h2 {
@@ -714,8 +685,8 @@ body, html {
 }
 
 .member img {
-  width: 350px; /* Adjust as needed */
-  height: 350px; /* Adjust as needed */
+  width: 350px; 
+  height: 350px; 
   margin-bottom: 20px;
 }
 
@@ -729,19 +700,19 @@ body, html {
   color: #666;
   text-align: left;
   max-width: 600px;
-  margin: auto; /* Centers the text */
+  margin: auto; 
 }
 
 
 /* Mission and Vision */
 .mission-vision {
-  background-color: #fff; /* Choose a color that fits your website's theme */
+  background-color: #fff; 
   padding: 40px 0;
   text-align: center;
 }
 
 .mission-vision .container {
-  max-width: 1000px; /* Adjust as needed */
+  max-width: 1000px; 
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -758,7 +729,7 @@ body, html {
 
 .mission h3, .vision h3 {
   font-size: 2em;
-  color: #007bff; /* A contrasting color for subheadings */
+  color: #007bff; 
   margin-bottom: 15px;
 }
 
@@ -770,13 +741,13 @@ body, html {
 
 /* Contact Form */
 .contact-form-section {
-  background-color: #f4f4f4; /* Or any color you prefer */
+  background-color: #f4f4f4; 
   padding: 40px 0;
   text-align: center;
 }
 
 .contact-form-section .container {
-  max-width: 600px; /* Adjust as needed */
+  max-width: 600px; 
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -829,7 +800,7 @@ button[type="submit"]:hover {
 /* Location map */
 .location-map {
   padding: 40px 0;
-  background-color: #f8f8f8; /* Or any color that fits your design */
+  background-color: #f8f8f8; 
   text-align: center;
 }
 
@@ -887,8 +858,8 @@ button[type="submit"]:hover {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-gap: 20px; /* Space between grid items */
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 20px; 
 }
 
 .website-service {
@@ -920,18 +891,18 @@ button[type="submit"]:hover {
 /* Single Service Page */
 .service-hero {
   display: flex;
-  align-items: center; /* Align items to stretch to the same height */
+  align-items: center; 
   justify-content: space-between;
   padding: 0;
-  background-color: #f8f8f8; /* Background color similar to about-hero */
+  background-color: #f8f8f8; 
 }
 
 .service-hero-image, .service-hero-content {
-  flex-basis: 50%; /* Adjusts the width of the content and image area */
+  flex-basis: 50%; 
 }
 
 .service-hero-content {
-  padding: 0 20px; /* Padding for the text content */
+  padding: 0 20px; 
 }
 
 .service-hero-content h1 {
@@ -948,7 +919,7 @@ button[type="submit"]:hover {
 .service-hero-image img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures the image covers the full area without stretching */
+  object-fit: cover; 
 }
 
 /* Single Service Section */
@@ -961,8 +932,8 @@ button[type="submit"]:hover {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around; /* Adjust spacing between items */
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: space-around; 
+  flex-wrap: wrap; 
   padding: 0 10px;
 }
 
@@ -984,25 +955,73 @@ button[type="submit"]:hover {
 .process-step-item {
   flex: 0 0 22%;
   margin: 10px;
-  padding: 15px; /* Balanced padding */
+  padding: 15px; 
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left;
-  height: 220px; /* Adjusted height for content */
+  height: 220px; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distributes space inside the container */
+  justify-content: space-between; 
 }
 
 .step-title {
   color: #3e3e3e;
-  font-size: 1.5em; /* Adjusted for better fit */
+  font-size: 1.5em; 
   margin-bottom: 15px;
 }
 
 .step-description {
-  font-size: 1em; /* Slightly smaller for neat fit */
+  font-size: 1em; 
   color: #666;
   line-height: 1.4;
 }
+
+/* Single Service Image Cover Section */
+.full-width-image-section {
+  position: relative;
+  height: 400px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.full-width-image-section .cover-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+.full-width-image-section .content {
+  position: relative;
+  z-index: 1; 
+  color: white; 
+  max-width: 600px; 
+  padding: 20px; 
+}
+
+/* Filter Design */
+.filter-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 200px; 
+  background-color: #f8f8f8; 
+}
+
+.filter-container {
+  text-align: center; 
+}
+
+#serviceFilter {
+  padding: 10px; 
+  font-size: 1em; 
+  margin: 0 auto; 
+}
+

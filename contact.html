@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Company Title</title>
+    <script src="login.js"></script>
+    <title>Digital Agency</title>
   </head>
   <body>
     <header class="navbar">
@@ -22,19 +23,23 @@
               <div class="submenu">
                 <button class="subdropbtn">Website Creation</button>
                 <div class="submenu-content">
-                  <a href="#">Custom Web Design</a>
-                  <a href="#">E-commerce Solutions</a>
-                  <a href="#">Responsive Web Design</a>
-                  <a href="#">Website Maintenance & Support</a>
+                  <a href="Service-Web-CWD.html">Custom Web Design</a>
+                  <a href="Service-Web-Ecomm.html">E-commerce Solutions</a>
+                  <a href="Service-Web-RWD.html">Responsive Web Design</a>
+                  <a href="Service-Web-Support.html"
+                    >Website Maintenance & Support</a
+                  >
                 </div>
               </div>
               <div class="submenu">
                 <button class="subdropbtn">Graphic Design</button>
                 <div class="submenu-content">
-                  <a href="#">Logo Design</a>
-                  <a href="#">Branding & Identity</a>
-                  <a href="#">Print Design</a>
-                  <a href="#">Digital Graphics</a>
+                  <a href="Service-Graphic-Logo.html">Logo Design</a>
+                  <a href="Service-Graphic-Branding.html"
+                    >Branding & Identity</a
+                  >
+                  <a href="Service-Graphic-Print.html">Print Design</a>
+                  <a href="Service-Graphic-Digital.html">Digital Graphics</a>
                 </div>
               </div>
             </div>
@@ -43,15 +48,14 @@
           <a href="contact.html">Contact Us</a>
         </nav>
       </div>
-      <!-- Login Button -->
       <!-- login-button -->
       <button class="login-button" onclick="openLoginForm()">LogIn</button>
 
       <!-- Login form floating layer -->
-      <div id="loginForm" class="login-modal">
+      <div id="loginFormContainer" class="login-modal">
         <div class="modal-content">
           <span class="close-button" onclick="closeLoginForm()">&times;</span>
-          <iframe src=""></iframe>
+          <!-- <iframe src=""></iframe> -->
         </div>
       </div>
     </header>
@@ -133,7 +137,7 @@
           Join us on your journey to success and let us achieve great things
           together.
         </p>
-        <a href="#services" class="btn">Get Started</a>
+        <a href="services.html" class="btn">Get Started</a>
       </div>
     </section>
     <!-- ...End of Call to Action Code... -->
@@ -150,20 +154,19 @@
           <p>Empowering your digital journey.</p>
         </div>
         <nav class="footer-nav">
-          <a href="#privacy">Privacy Policy</a>
-          <a href="#terms">Terms of Use</a>
-          <a href="#contact">Contact Us</a>
+          <a>Privacy Policy</a>
+          <a>Terms of Use</a>
+          <a>Contact Us</a>
         </nav>
         <div class="footer-social">
-          <a href="your_facebook_link" class="social-icon">FB</a>
-          <a href="your_twitter_link" class="social-icon">TW</a>
-          <a href="your_instagram_link" class="social-icon">IG</a>
+          <a class="social-icon">FB</a>
+          <a class="social-icon">TW</a>
+          <a class="social-icon">IG</a>
         </div>
         <p class="footer-copy">
           Copyright © 2023 Digital Agency. All rights reserved.
         </p>
       </div>
     </footer>
-    <script src="contact-form-handler.js"></script>
   </body>
 </html>
