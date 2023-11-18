@@ -8,38 +8,243 @@
   </head>
   <body>
     <header class="navbar">
-      <!-- Logo Link to home page -->
       <div class="logo">
         <a href="index.html">Logo</a>
       </div>
-
-      <!-- Menu items are linked to their respective pages -->
       <div class="menu-container">
         <nav class="menu">
           <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="services.html"> Services</a>
+            </button>
+            <div class="dropdown-content">
+              <div class="submenu">
+                <button class="subdropbtn">Website Creation</button>
+                <div class="submenu-content">
+                  <a href="#">Custom Web Design</a>
+                  <a href="#">E-commerce Solutions</a>
+                  <a href="#">Responsive Web Design</a>
+                  <a href="#">Website Maintenance & Support</a>
+                </div>
+              </div>
+              <div class="submenu">
+                <button class="subdropbtn">Graphic Design</button>
+                <div class="submenu-content">
+                  <a href="#">Logo Design</a>
+                  <a href="#">Branding & Identity</a>
+                  <a href="#">Print Design</a>
+                  <a href="#">Digital Graphics</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="about.html">About Us</a>
           <a href="contact.html">Contact Us</a>
         </nav>
       </div>
-
       <!-- Login Button -->
-      <button class="login-button">LogIn</button>
+      <!-- login-button -->
+      <button class="login-button" onclick="openLoginForm()">LogIn</button>
+
+      <!-- Login form floating layer -->
+      <div id="loginForm" class="login-modal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeLoginForm()">&times;</span>
+          <iframe src=""></iframe>
+        </div>
+      </div>
     </header>
 
-    <!-- Other body will show here... -->
+    <!-- Contact Hero -->
+    <section class="about-hero">
+      <div class="hero-content">
+        <h1>Services</h1>
+        <p>Your digital journey starts with a single click.</p>
+      </div>
+      <div class="hero-image">
+        <img
+          src="Images/services-hero-1.jpg"
+          alt="Image Representing Company"
+        />
+      </div>
+    </section>
 
-    <!-- ...Other HTML... -->
+    <!-- Our Story -->
+    <section class="our-story">
+      <div class="container">
+        <h2>Welcome to Digital Agency</h2>
+        <p>
+          At Digital Agency, we believe in the power of digital transformation.
+          Our team of dedicated professionals is passionate about creating
+          digital solutions that not only look great but also drive results.
+          Whether you're a startup looking for a unique identity or an
+          established business aiming to enhance your online presence, we've got
+          you covered.
+        </p>
+      </div>
+    </section>
 
+    <!-- Website Creation Services -->
+    <section class="website-creation-section">
+      <div class="website-creation-container">
+        <h2 class="website-creation-title">Website Creation</h2>
+        <p class="website-creation-description">
+          Your website is the digital face of your business...
+        </p>
+
+        <div class="services-grid">
+          <div class="website-service">
+            <img
+              src="Images/services-webdesign-1.jpg"
+              alt="Custom Web Design"
+              class="service-image"
+            />
+            <h3 class="service-title">Custom Web Design</h3>
+            <p class="service-description">
+              Tailored to your brand's identity...
+            </p>
+          </div>
+
+          <div class="website-service">
+            <img
+              src="Images/services-webshop-1.jpg"
+              alt="E-commerce Solutions"
+              class="service-image"
+            />
+            <h3 class="service-title">E-commerce Solutions</h3>
+            <p class="service-description">
+              From product listings to secure payment gateways...
+            </p>
+          </div>
+
+          <div class="website-service">
+            <img
+              src="Images/services-responsiveweb-1.jpg"
+              alt="Responsive Web Design"
+              class="service-image"
+            />
+            <h3 class="service-title">Responsive Web Design</h3>
+            <p class="service-description">
+              Ensure your website looks and functions perfectly...
+            </p>
+          </div>
+
+          <div class="website-service">
+            <img
+              src="Images/services-support-1.jpg"
+              alt="Website Maintenance & Support"
+              class="service-image"
+            />
+            <h3 class="service-title">Website Maintenance & Support</h3>
+            <p class="service-description">
+              Keep your website up-to-date and running smoothly...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graphic Design Services -->
+    <section class="website-creation-section">
+      <div class="website-creation-container">
+        <h2 class="website-creation-title">Graphic Design</h2>
+        <p class="website-creation-description">
+          Visuals speak louder than words...
+        </p>
+
+        <div class="services-grid">
+          <div class="website-service">
+            <img
+              src="Images/services-graphic-logodesign-1.jpg"
+              alt="Custom Web Design"
+              class="service-image"
+            />
+            <h3 class="service-title">Logo Design</h3>
+            <p class="service-description">
+              A logo is more than just an image...
+            </p>
+          </div>
+
+          <div class="website-service">
+            <img
+              src="Images/services-graphic-branding-1.jpg"
+              alt="E-commerce Solutions"
+              class="service-image"
+            />
+            <h3 class="service-title">Branding & Identity</h3>
+            <p class="service-description">
+              Consistent branding is key to building trust...
+            </p>
+          </div>
+
+          <div class="website-service">
+            <img
+              src="Images/services-graphic-printdesign-1.jpg"
+              alt="Responsive Web Design"
+              class="service-image"
+            />
+            <h3 class="service-title">Print Design</h3>
+            <p class="service-description">
+              Our designs ensure you leave a tangible mark in the physical
+              world....
+            </p>
+          </div>
+
+          <div class="website-service">
+            <img
+              src="Images/services-graphic-digitalgraphics-1.jpg"
+              alt="Website Maintenance & Support"
+              class="service-image"
+            />
+            <h3 class="service-title">Digital Graphics</h3>
+            <p class="service-description">
+              We create visuals that drive clicks and conversions...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Code -->
+    <section class="call-to-action" id="call-to-action-about">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>
+          Join us on your journey to success and let us achieve great things
+          together.
+        </p>
+        <a href="#services" class="btn">Get Started</a>
+      </div>
+    </section>
+    <!-- ...End of Call to Action Code... -->
+
+    <!-- ...Footer Code... -->
     <footer class="footer">
       <div class="footer-content">
-        <p>Copyright © 2023 CompanyName. All rights reserved。</p>
+        <div class="footer-brand">
+          <img
+            src="Images/eBusiness Project (512 x 300 px).png"
+            alt="Digital Agency Logo"
+            class="footer-logo"
+          />
+          <p>Empowering your digital journey.</p>
+        </div>
         <nav class="footer-nav">
           <a href="#privacy">Privacy Policy</a>
           <a href="#terms">Terms of Use</a>
           <a href="#contact">Contact Us</a>
         </nav>
+        <div class="footer-social">
+          <a href="your_facebook_link" class="social-icon">FB</a>
+          <a href="your_twitter_link" class="social-icon">TW</a>
+          <a href="your_instagram_link" class="social-icon">IG</a>
+        </div>
+        <p class="footer-copy">
+          Copyright © 2023 Digital Agency. All rights reserved.
+        </p>
       </div>
     </footer>
+    <script src="contact-form-handler.js"></script>
   </body>
 </html>

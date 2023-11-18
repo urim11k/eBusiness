@@ -9,37 +9,53 @@
   </head>
   <body>
     <header class="navbar">
-      <!-- Logo Link to home page -->
       <div class="logo">
         <a href="index.html">Logo</a>
       </div>
-
-      <!-- Menu items are linked to their respective pages -->
       <div class="menu-container">
         <nav class="menu">
           <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="services.html"> Services</a>
+            </button>
+            <div class="dropdown-content">
+              <div class="submenu">
+                <button class="subdropbtn">Website Creation</button>
+                <div class="submenu-content">
+                  <a href="#">Custom Web Design</a>
+                  <a href="#">E-commerce Solutions</a>
+                  <a href="#">Responsive Web Design</a>
+                  <a href="#">Website Maintenance & Support</a>
+                </div>
+              </div>
+              <div class="submenu">
+                <button class="subdropbtn">Graphic Design</button>
+                <div class="submenu-content">
+                  <a href="#">Logo Design</a>
+                  <a href="#">Branding & Identity</a>
+                  <a href="#">Print Design</a>
+                  <a href="#">Digital Graphics</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="about.html">About Us</a>
           <a href="contact.html">Contact Us</a>
         </nav>
       </div>
-
       <!-- Login Button -->
-        <!-- login-button -->
-        <button class="login-button" onclick="openLoginForm()">LogIn</button>
+      <!-- login-button -->
+      <button class="login-button" onclick="openLoginForm()">LogIn</button>
 
-          <!-- Login form floating layer -->
-          <div id="loginForm" class="login-modal">
-            <div class="modal-content">
-                <span class="close-button" onclick="closeLoginForm()">&times;</span>
-                <iframe src="http://localhost:8080/website_login/index.php"></iframe>
-              
-            </div>
-          </div>
-
+      <!-- Login form floating layer -->
+      <div id="loginForm" class="login-modal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeLoginForm()">&times;</span>
+          <iframe src=""></iframe>
+        </div>
+      </div>
     </header>
-
-    <!-- Other body will show here... -->
 
     <!-- ...Hero section Code... -->
 

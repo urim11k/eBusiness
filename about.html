@@ -8,28 +8,159 @@
   </head>
   <body>
     <header class="navbar">
-      <!-- Logo Link to home page -->
       <div class="logo">
         <a href="index.html">Logo</a>
       </div>
-
-      <!-- Menu items are linked to their respective pages -->
       <div class="menu-container">
         <nav class="menu">
           <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="services.html"> Services</a>
+            </button>
+            <div class="dropdown-content">
+              <div class="submenu">
+                <button class="subdropbtn">Website Creation</button>
+                <div class="submenu-content">
+                  <a href="#">Custom Web Design</a>
+                  <a href="#">E-commerce Solutions</a>
+                  <a href="#">Responsive Web Design</a>
+                  <a href="#">Website Maintenance & Support</a>
+                </div>
+              </div>
+              <div class="submenu">
+                <button class="subdropbtn">Graphic Design</button>
+                <div class="submenu-content">
+                  <a href="#">Logo Design</a>
+                  <a href="#">Branding & Identity</a>
+                  <a href="#">Print Design</a>
+                  <a href="#">Digital Graphics</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="about.html">About Us</a>
           <a href="contact.html">Contact Us</a>
         </nav>
       </div>
-
       <!-- Login Button -->
-      <button class="login-button">LogIn</button>
+      <!-- login-button -->
+      <button class="login-button" onclick="openLoginForm()">LogIn</button>
+
+      <!-- Login form floating layer -->
+      <div id="loginForm" class="login-modal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeLoginForm()">&times;</span>
+          <iframe src=""></iframe>
+        </div>
+      </div>
     </header>
 
-    <!-- Other body will show here... -->
+    <!-- About Hero -->
+    <section class="about-hero">
+      <div class="hero-content">
+        <h1>About Our Company</h1>
+        <p>Discover the journey, mission, and people behind our brand.</p>
+      </div>
+      <div class="hero-image">
+        <img src="Images/about-hero-1.jpg" alt="Image Representing Company" />
+      </div>
+    </section>
 
-    <!-- ...Other HTML... -->
+    <!-- Our Story -->
+    <section class="our-story">
+      <div class="container">
+        <h2>Our Story</h2>
+        <p>
+          In the heart of the digital age, we recognized a need for businesses
+          to not just have an online presence, but to truly stand out in the
+          vast digital landscape. That's how our journey began. With a passion
+          for creativity and a drive for innovation, we founded our digital
+          agency to bridge the gap between ordinary and extraordinary online
+          experiences. Over the years, we've helped countless businesses
+          transform their digital footprints, ensuring they not only reach their
+          target audience but also leave a lasting impression.
+        </p>
+      </div>
+    </section>
+
+    <!-- Members Section -->
+    <section class="team-members">
+      <div class="container">
+        <h2>Team Members</h2>
+        <p>
+          Our strength lies in our diverse team of experts. Each member brings a
+          unique skill set, background, and perspective to the table, ensuring
+          that every project we undertake benefits from a holistic approach.
+        </p>
+
+        <div class="member">
+          <img src="Images/urim-team-picture-1.jpg" alt="Urim Shkreli" />
+          <h3>Urim Shkreli</h3>
+          <p>
+            Co-founder & Lead Web Developer - With over 5 years of experience in
+            web development, Urim has a knack for creating websites that are not
+            only visually appealing but also user-friendly and optimized for
+            performance.
+          </p>
+        </div>
+
+        <div class="member">
+          <img src="Images/shih-jan-team-picture-1.jpg" alt="Shih-Jan Kuo" />
+          <h3>Shih-Jan Kuo</h3>
+          <p>
+            Co-founder & Chief Graphic Designer - A true artist at heart,
+            Shih-Jan's designs are always fresh, innovative, and tailored to
+            each client's brand identity.
+          </p>
+        </div>
+
+        <div class="member">
+          <img src="Images/kiranjit-team-picture-1.jpg" alt="Kiranjit Kaur" />
+          <h3>Kiranjit Kaur</h3>
+          <p>
+            Project Manager - Kiranjit ensures that every project runs smoothly
+            from start to finish, liaising between clients and our team to
+            guarantee satisfaction on both ends.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Vission -->
+    <section class="mission-vision">
+      <div class="container">
+        <h2>Our Mission & Vision</h2>
+        <div class="mission">
+          <h3>Mission</h3>
+          <p>
+            To empower businesses with cutting-edge web and graphic design
+            solutions that captivate, engage, and convert their target audience.
+          </p>
+        </div>
+        <div class="vision">
+          <h3>Vision</h3>
+          <p>
+            To be the leading digital agency known for its creativity,
+            innovation, and commitment to excellence, setting the gold standard
+            in web development and graphic design services worldwide.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Code -->
+    <section class="call-to-action" id="call-to-action-about">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>
+          Join us on your journey to success and let us achieve great things
+          together.
+        </p>
+        <a href="#services" class="btn">Get Started</a>
+      </div>
+    </section>
+    <!-- ...End of Call to Action Code... -->
 
     <!-- ...Footer Code... -->
     <footer class="footer">
