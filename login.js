@@ -11,6 +11,8 @@ window.onload = function() {
   document.getElementById('loginForm').addEventListener('submit', function(e) {
       e.preventDefault();
 
+      console.log("Form submitted"); 
+
       var xhr = new XMLHttpRequest();
       var url = "http://localhost:8080/website_login/loginHandler.php"; // Update this path if needed
       xhr.open("POST", url, true);
@@ -27,6 +29,10 @@ window.onload = function() {
       var email = document.getElementById("email").value;
       var password = document.getElementById("password").value;
       var data = "email=" + encodeURIComponent(email) + "&password=" + encodeURIComponent(password);
+
+      console.log("Email: " + email); // check email
+      console.log("Password: " + password); // check password
+
       xhr.send(data);
   });
 
