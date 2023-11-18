@@ -26,10 +26,10 @@
 
       <!-- Login Button -->
         <!-- login-button -->
-        <button class="login-button" onclick="openLoginForm()">LogIn</button>
+        <button class="login-button" id="loginButton" onclick="openLoginForm()">LogIn</button>
 
           <!-- Login form floating layer -->
-          <div id="loginForm" class="login-modal">
+          <div id="loginFormContainer" class="login-modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeLoginForm()">&times;</span>
                 
@@ -46,13 +46,29 @@
                     </div>
                     <button type="submit" class="btn login-btn">Login</button>
                 </form>
+                <div id="loginResult"></div>
                 
         <!-- account button-->
-        <button class="account-button" onclick="openAccountForm()">Account</button>
+        <button id="accountButton" style="display: none;">Account</button>
         
         <!-- account drop down form-->
-        <div>
+        <div id="accountDropdown" style="display: none;">
+            <!-- user infor -->
+            <?php
+            session_start();
+            if (!empty($_SESSION['sessData']) && !empty($_SESSION['sessData']['userID'])) {
+                include 'user.php'; // 确保包含了处理用户数据的PHP类
+                $user = new User();
+                $conditions['where'] = array('id' => $_SESSION['sessData']['userID']);
+                $conditions['return_type'] = 'single';
+                $userData = $user->getRows($conditions);
 
+                if (!empty($userData)) {
+                    echo 'Hello, ' . htmlspecialchars($userData['first_name']) . ' ' . htmlspecialchars($userData['last_name']);
+                    // 在这里，您可以添加更多用户信息的显示
+                }
+            }
+            ?>
         </div>
 
 
